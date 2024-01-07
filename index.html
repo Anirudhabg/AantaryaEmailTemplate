@@ -1,44 +1,188 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Registration Confirmation - Aantarya 2k24</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/575979a404.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #e7e6e6;
+        }
+
+        .container {
+            background-color: #0a579b;
+            color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: auto;
+        }
+
+        .logo {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .greeting_text,
+        .team_details_text,
+        .follow_us {
+            padding: 0 20px;
+        }
+
+        .main_text {
+            color: #fed201;
+            text-align: center;
+            font-size: 24px;
+        }
+
+        .text_one,
+        .text_two,
+        .text_three {
+            color: #fff;
+            font-size: 16px;
+            margin: 5px;
+        }
+
+        .team_details ul {
+            list-style: none;
+            text-align: center;
+        }
+
+        .team_details li {
+            font-size: 16px;
+            margin: 5px;
+        }
+
+        .card-social {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            margin: 10px;
+        }
+
+        .socialContainer {
+            width: 40px;
+            height: 40px;
+            background-color: #2c2c2c;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            transition-duration: 0.3s;
+            border-radius: 50%;
+        }
+
+        .socialContainer:hover {
+            background-color: #9b30df;
+            transition-duration: 0.3s;
+        }
+
+        .socialContainer:active {
+            transform: scale(0.9);
+            transition-duration: 0.3s;
+        }
+
+        .socialSvg {
+            width: 17px;
+            fill: #fff;
+        }
+
+        .line {
+            width: 100%;
+            height: 1px;
+            background-color: #fff;
+            margin: 10px 0;
+        }
+
+        .copyright_text {
+            text-align: center;
+        }
+
+        .sub_text,
+        .copyright_text_one,
+        .copyright_text_two {
+            font-size: 12px;
+            text-decoration: none;
+            text-align: center;
+            color: #e7e6e6a3;
+        }
+
+        .sub_text a {
+            text-decoration: none;
+            font-style: italic;
+        }
+        .best_regards p, .text_three{
+            color: #fed201 !important;
+            font-weight: 500;
+            font-size: 1.1rem;
+            letter-spacing: 0.05rem;
+            padding-bottom: 0.3rem;
+        }
+
+        .text_one span{
+            font-weight: 600;
+        }
+
+        .footer_text p,
+        .footer_text a {
+            color: #e7e6e6a3;
+        }
+
+        .footer_text {
+            padding: 10px 1rem;
+        }
+
+        p.text_three {
+            text-align: center;
+        }
+
+        p.text_three.pos {
+            margin: 0;
+        }
+    </style>
 </head>
 
 <body>
     <div class="container">
-        <div class="back_one"></div>
-        <img src="Images/logo.png" alt="Aantarya Logo" class="logo">
+        <img src="https://mailsend-email-assets.mailtrap.io/c4mynlhnluqw7mfzens9oblz1730.png" alt="Aantarya Logo"
+            class="logo" />
         <div class="greeting_text">
             <h1 class="main_text">Greetings from Aantarya !!</h1>
             <p class="text_one">Get set to Maximize Your IT Skills!</p>
-            <p class="text_two">We are grateful that you have registered for Aantarya 2k24, our college's premier IT and
-                cultural spectacular. We are thrilled to have you join the team and can't wait to see your talent and
-                ingenuity in action.</p>
-
+            <p class="text_two">
+                We are grateful that you have registered for Aantarya 2k24, our
+                college's premier IT and cultural spectacular. We are thrilled to have
+                you join the team and can't wait to see your talent and ingenuity in
+                action.
+            </p>
         </div>
-        <div class="back_two"></div>
         <div class="team_details_text">
             <div class="team_details">
                 <h1 class="main_text">Team Details</h1>
                 <ul>
-                    <li class="text_one">College Name: {{college_name}}</li>
-                    <li class="text_one">Event Category: {{UG/PG}}</li>
+                    <li class="text_one"><span>College Name</span>: {{college_name}}</li>
+                    <li class="text_one"><span>Event Category</span>: {{ug_pg}}</li>
                 </ul>
-                <p class="text_two">Thank you for participating in our event. We look forward to seeing you at the
-                    Aantarya IT Fest. Please log in to your account and register participants for the events.</p>
+                <p class="text_two">
+                    Thank you for participating in our event. We look forward to seeing
+                    you at the Aantarya IT Fest. Please log in to your account and
+                    register participants for the events.
+                </p>
             </div>
 
             <div class="follow-us">
-                <p class="follow_us_text">Do Follow Us</p>
+                <p class="text_three">Do Follow Us</p>
                 <div class="card-social">
                     <a href="https://www.instagram.com/aantarya_2k24/" target="_blank"
                         class="socialContainer containerOne">
@@ -48,7 +192,6 @@
                             </path>
                         </svg>
                     </a>
-
 
                     <a href="https://www.youtube.com/@aantarya2k24" target="_blank"
                         class="socialContainer containerTwo">
@@ -64,7 +207,8 @@
                                     </path>
                                 </g>
                             </g>
-                        </svg> </a>
+                        </svg>
+                    </a>
                 </div>
             </div>
 
@@ -76,18 +220,19 @@
         <div class="back_three"></div>
         <div class="footer_text">
             <div class="line"></div>
-            <p class="sub_text">This is an auto-generated email as you registered for Aantarya 2k24. If you have any
-                questions or issues about the event, please don't hesitate to contact us at our <a
-                    href="https://aantarya.tech/">official website</a>.
+            <p class="sub_text">
+                This is an auto-generated email as you registered for Aantarya 2k24.
+                If you have any questions or issues about the event, please don't
+                hesitate to contact us at our
+                <a href="https://aantarya.tech/">official website</a>.
             </p>
             <div class="copyright_text">
-                <p class="copyright_text_one">©Aantarya-2k24. All rights reserved.</p>
-                <a href="https://vcetputtur.ac.in/" class="copyright_text_one copyright_text_two">Vivekananda College of Engineering & Technology (VCET), Puttur</a>
+                <p class="copyright_text_one">Copyright &copy; Aantarya-2k24. All rights reserved.</p>
+                <a href="https://vcetputtur.ac.in/" class="copyright_text_one copyright_text_two">Vivekananda College of
+                    Engineering & Technology (VCET), Puttur</a>
             </div>
         </div>
     </div>
-
-
 </body>
 
 </html>
