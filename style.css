@@ -8,7 +8,7 @@ body {
 
 .container {
   max-width: 37.5rem;
-  height: 109.688rem;
+  height: 110.688rem;
   margin: 1.25rem auto;
   background-color: #0a579b;
   color: #fff;
@@ -265,7 +265,7 @@ a {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    height: 1380px;
+    height: 1140px;
   }
   .back_one,
   .back_two,
@@ -294,7 +294,7 @@ a {
     font-size: 1.35rem;
   }
   .back_two {
-    height: 13%;
+    height: 17%;
     /* transform: rotate(90deg); */
   }
   .team_details_text {
@@ -324,7 +324,7 @@ a {
   .footer_text{
     width: 100%;
     padding: 0;
-    top: -46rem;
+    top: -44rem;
   }
   .line{
     width: 300px;
