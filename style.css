@@ -7,25 +7,24 @@ body {
 }
 
 .container {
-  max-width: 600px;
-  height: 1755px;
-  margin: 20px auto;
+  max-width: 37.5rem;
+  height: 109.688rem;
+  margin: 1.25rem auto;
   background-color: #0a579b;
   color: #fff;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 0.313rem;
+  box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1);
 }
 
 .logo {
   position: relative;
   bottom: 11rem;
   overflow: hidden;
-  width: 600px;
-  /* height: 458.621px; */
+  width: 37.5rem;
 }
 .back_one {
-  width: 600px;
-  height: 160px;
+  width: 37.5rem;
+  height: 10rem;
   flex-shrink: 0;
   opacity: 0.5;
   transform: rotate(180deg);
@@ -37,8 +36,8 @@ body {
 }
 
 .greeting_text {
-  width: 500px;
-  padding: 0 50px;
+  width: 31.25rem;
+  padding: 0 3.125rem;
   position: relative;
   bottom: 11rem;
 }
@@ -46,7 +45,7 @@ body {
   color: #fed201;
   text-align: center;
   font-family: Miso;
-  font-size: 72px;
+  font-size: 4.5rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -55,7 +54,7 @@ body {
   color: #fff;
   text-align: center;
   font-family: Miso;
-  font-size: 42px;
+  font-size: 2.625rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -66,7 +65,7 @@ body {
   color: #fff;
   text-align: center;
   font-family: Miso;
-  font-size: 28px;
+  font-size: 1.75rem;
   font-style: normal;
   font-weight: 400;
   line-height: 125%; /* 35px */
@@ -74,8 +73,8 @@ body {
   bottom: 4rem;
 }
 .back_two {
-  width: 600px;
-  height: 350px;
+  width: 37.5rem;
+  height: 21.875rem;
   flex-shrink: 0;
   opacity: 0.5;
   transform: rotate(180deg);
@@ -89,17 +88,16 @@ body {
 }
 
 .team_details_text {
-  width: 500px;
-  height: 484px;
+  width: 31.25rem;
+  height: 30.25rem;
   flex-shrink: 0;
-  padding: 0 50px;
+  padding: 0 3.125rem;
   position: relative;
   bottom: 40rem;
 }
 .team_details {
-  width: 500px;
-  height: 400px;
-  flex-shrink: 0;
+  width: 31.25rem;
+  height: 25rem;
 }
 .team_details .text_two {
   position: relative;
@@ -111,7 +109,8 @@ ul {
   margin: 0;
 }
 .follow_us {
-  width: 500px;
+  width: 31.25rem;
+  position: relative;
 }
 .card-social {
   width: fit-content;
@@ -181,7 +180,7 @@ ul {
   color: #fed201;
   text-align: center;
   font-family: Miso;
-  font-size: 28px;
+  font-size: 1.75rem;
   font-style: normal;
   font-weight: 400;
   line-height: 125%; /* 35px */
@@ -191,7 +190,7 @@ ul {
   color: #fed201;
   text-align: center;
   font-family: Miso;
-  font-size: 28px;
+  font-size: 1.75rem;
   font-style: normal;
   font-weight: 400;
   line-height: 125%; /* 35px */
@@ -204,16 +203,16 @@ ul {
 }
 
 .footer_text {
-  width: 500px;
-  height: 119px;
-  padding: 0 50px;
+  width: 31.25rem;
+  height: 7.438rem;
+  padding: 0 3.125rem;
   position: relative;
   bottom: 52rem;
 }
 
 .line {
-  width: 500px;
-  height: 1px;
+  width: 31.25rem;
+  height: 0.063rem;
   background-color: #fff;
 }
 
@@ -221,15 +220,15 @@ ul {
   color: #fff;
   text-align: center;
   font-family: Miso;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-style: normal;
   font-weight: 400;
   line-height: 125%; /* 25px */
 }
 
 .back_three {
-  width: 600px;
-  height: 335px;
+  width: 37.5rem;
+  height: 20.938rem;
   background-image: url(Images/mandala.png);
   background-position: 50%;
   background-size: cover;
@@ -241,14 +240,112 @@ ul {
   color: rgba(255, 255, 255, 0.5);
   text-align: center;
   font-family: Miso;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-style: normal;
   font-weight: 400;
   line-height: 125%; /* 25px */
 }
 
-a{
+a {
   color: #fff;
   cursor: pointer;
-  
+}
+
+.copyright_text_two{
+  position: relative;
+  bottom: 1rem;
+  /* margin: 0 auto; */
+  /* left: 1.5rem; */
+  padding: 0 40px;
+  text-decoration: none;
+}
+@media (max-width: 767px) {
+  .container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 1380px;
+  }
+  .back_one,
+  .back_two,
+  .back_three {
+    width: 100%;
+  }
+  .back_one {
+    height: 7%;
+  }
+  .logo {
+    width: 100%;
+    position: relative;
+    top: -9rem;
+  }
+  .greeting_text {
+    width: 100%;
+    padding: 0;
+  }
+  .main_text {
+    font-size: 3.75rem;
+  }
+  .text_one {
+    font-size: 2.188rem;
+  }
+  .text_two {
+    font-size: 1.35rem;
+  }
+  .back_two {
+    height: 13%;
+    /* transform: rotate(90deg); */
+  }
+  .team_details_text {
+    /* position: relative; */
+    padding: 0;
+    width: 100%;
+    bottom: 29rem;
+  }
+  .team_details {
+    width: 100%;
+  }
+  .card-social{
+    position: relative;
+    bottom: 7.5rem;
+  }
+  .follow_us_text{
+    position: relative;
+    bottom: 7rem;
+  }
+  .follow_us_text,.text_three{
+    font-size: 1.35rem;
+  }
+  .best_regards {
+    position: relative;
+    bottom: 8rem;
+  }
+  .footer_text{
+    width: 100%;
+    padding: 0;
+    top: -46rem;
+  }
+  .line{
+    width: 300px;
+    margin: 0 auto;
+  }
+  .sub_text,.copyright_text_one{
+    font-size: 15px;
+    text-decoration: none;
+    text-align: center;
+  }
+  .back_three{
+    height: 18%;
+  }
+  li.text_one{
+    font-size: 1.75rem;
+  }
+  .copyright_text_two{
+    text-align: center;
+    position: relative;
+    bottom: 1rem;
+    left: 1.4rem;
+    padding: 0;
+  }
 }
