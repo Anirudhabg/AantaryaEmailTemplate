@@ -15,11 +15,19 @@
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
-            background-color: #e7e6e6;
+            background: #e7e6e6;
+            /* background: url('./Images/mandala.png') #e7e6e6;
+            background-position: center;
+            background-size: contain;
+            background-repeat: repeat; */
         }
 
         .container {
             background-color: #0a579b;
+            background: url('https://mailsend-email-assets.mailtrap.io/zrkksplff7ln4v66iv6rldlj9rj6.png') #0a579b;
+            background-position: center;
+            background-size: 50vw;
+            background-repeat: space;
             color: #fff;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             max-width: 600px;
@@ -68,6 +76,15 @@
 
         .copyright_text {
             text-align: center;
+        }
+
+        .text_one .text_one_name{
+            font-weight: bold;
+        }
+
+        .tex_one_name .text_one_value{
+            letter-spacing: 0.1rem;
+            font-weight: 400;
         }
 
         .sub_text,
@@ -124,8 +141,8 @@
             <div class="team_details">
                 <h1 class="main_text">Team Details</h1>
                 <ul>
-                    <li class="text_one"><span>College Name</span>: {{college_name}}</li>
-                    <li class="text_one"><span>Event Category</span>: {{ug_pg}}</li>
+                    <li class="text_one"><span class="text_one_name">College Name</span>: <span class="text_one_value">{{college_name}}</span> </li>
+                    <li class="text_one"><span class="text_one_name">Event Category</span>: <span class="text_one_value">{{ug_pg}}</span></li>
                 </ul>
                 <p class="text_two">
                     Thank you for participating in our event. We look forward to seeing
