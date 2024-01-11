@@ -32,7 +32,7 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             max-width: 600px;
             margin: auto;
-            padding: 1.5rem;
+            padding: 1rem;
             padding-bottom: 0.5rem;
         }
 
@@ -40,6 +40,12 @@
             max-width: 100%;
             height: auto;
             margin-top: -15%;
+        }
+
+
+        .container p{
+            text-align: justify;
+            line-height: 155%;
         }
 
         .main_text {
@@ -92,13 +98,24 @@
         .copyright_text_two {
             font-size: 12px;
             text-decoration: none;
-            text-align: center;
+            text-align: center !important;
             color: #e7e6e6a3;
+        }
+
+        .sub_text{
+            padding-bottom: 1.5rem;
+        }
+        .sub_text, .sub_text a{
+            color: #ffffffe0 !important;
         }
 
         .sub_text a, .copyright_text a {
             text-decoration: none;
             font-style: italic;
+        }
+
+        .best_regards{
+            padding-top: 0.5rem;
         }
 
         .best_regards p, .text_three{
@@ -117,6 +134,14 @@
         p.text_three {
             text-align: center;
         }
+
+
+        @media only screen and (max-width: 768px) {
+            .container {
+                background-size: 150%;
+            }
+        }
+
     </style>
 </head>
 
