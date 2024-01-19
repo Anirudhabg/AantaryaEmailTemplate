@@ -1,93 +1,202 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Registration Confirmation - Aantarya 2k24</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/575979a404.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background: #e7e6e6;
+            /* background: url('./Images/mandala.png') #e7e6e6;
+            background-position: center;
+            background-size: contain;
+            background-repeat: repeat; */
+        }
+
+        .container {
+            background-color: #0a579b;
+            background: url('https://mailsend-email-assets.mailtrap.io/zrkksplff7ln4v66iv6rldlj9rj6.png') #0a579b;
+            background-position: center;
+            background-size: 50vw;
+            background-repeat: space;
+            color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: auto;
+            padding: 1rem;
+            padding-bottom: 0.5rem;
+        }
+
+        .logo {
+            max-width: 100%;
+            height: auto;
+            margin-top: -15%;
+        }
+
+
+        .container p{
+            text-align: justify;
+            line-height: 155%;
+        }
+
+        .main_text {
+            color: #fed201;
+            text-align: center;
+            font-size: 24px;
+            padding: 0.5rem;
+        }
+
+        .text_one,
+        .text_two,
+        .text_three {
+            color: #fff;
+            font-size: 16px;
+        }
+
+        .team_details ul {
+            list-style: none;
+            text-align: center;
+            padding-bottom: 1rem;
+        }
+
+        .team_details li {
+            font-size: 16px;
+            text-align: left;
+        }
+
+        .line {
+            width: 100%;
+            height: 1px;
+            background-color: #fff;
+            margin: 10px 0;
+        }
+
+        .copyright_text {
+            text-align: center;
+        }
+
+        .text_one .text_one_name{
+            font-weight: bold;
+        }
+
+        .tex_one_name .text_one_value{
+            letter-spacing: 0.1rem;
+            font-weight: 400;
+        }
+
+        .sub_text,
+        .copyright_text_one,
+        .copyright_text_two {
+            font-size: 12px;
+            text-decoration: none;
+            text-align: center !important;
+            color: #e7e6e6a3;
+        }
+
+        .sub_text{
+            padding-bottom: 1.5rem;
+        }
+        .sub_text, .sub_text a{
+            color: #ffffffe0 !important;
+        }
+
+        .sub_text a, .copyright_text a {
+            text-decoration: none;
+            font-style: italic;
+        }
+
+        .best_regards{
+            padding-top: 0.5rem;
+        }
+
+        .best_regards p, .text_three{
+            color: #fed201 !important;
+            font-weight: 500;
+            font-size: 1.1rem;
+            letter-spacing: 0.05rem;
+        }
+
+
+        .footer_text p,
+        .footer_text a {
+            color: #e7e6e6a3;
+        }
+
+        p.text_three {
+            text-align: center;
+        }
+
+
+        @media only screen and (max-width: 768px) {
+            .container {
+                background-size: 150%;
+            }
+        }
+
+    </style>
 </head>
 
 <body>
     <div class="container">
-        <div class="back_one"></div>
-        <img src="Images/logo.png" alt="Aantarya Logo" class="logo">
+        <img src="https://mailsend-email-assets.mailtrap.io/c4mynlhnluqw7mfzens9oblz1730.png" alt="Aantarya Logo"
+            class="logo" />
+        <!-- <img src="/Images/logo.png" alt="Aantarya Logo"
+            class="logo" /> -->
+        
         <div class="greeting_text">
             <h1 class="main_text">Greetings from Aantarya !!</h1>
             <p class="text_one">Get set to Maximize Your IT Skills!</p>
-            <p class="text_two">We are grateful that you have registered for Aantarya 2k24, our college's premier IT and
-                cultural spectacular. We are thrilled to have you join the team and can't wait to see your talent and
-                ingenuity in action.</p>
-
+            <p class="text_two">
+                We are grateful that you have registered for Aantarya 2k24, our
+                college's premier IT and cultural spectacular. We are thrilled to have
+                you join the team and can't wait to see your talent and ingenuity in
+                action.
+            </p>
         </div>
-        <div class="back_two"></div>
         <div class="team_details_text">
             <div class="team_details">
                 <h1 class="main_text">Team Details</h1>
                 <ul>
-                    <li class="text_one">College Name: {{college_name}}</li>
-                    <li class="text_one">Event Category: {{UG/PG}}</li>
+                    <li class="text_one"><span class="text_one_name">College Name</span>: <span class="text_one_value">{{college_name}}</span> </li>
+                    <li class="text_one"><span class="text_one_name">Event Category</span>: <span class="text_one_value">{{ug_pg}}</span></li>
                 </ul>
-                <p class="text_two">Thank you for participating in our event. We look forward to seeing you at the
-                    Aantarya IT Fest. Please log in to your account and register participants for the events.</p>
-            </div>
-
-            <div class="follow-us">
-                <p class="follow_us_text">Do Follow Us</p>
-                <div class="card-social">
-                    <a href="https://www.instagram.com/aantarya_2k24/" target="_blank"
-                        class="socialContainer containerOne">
-                        <svg class="socialSvg instagramSvg" viewBox="0 0 16 16">
-                            <path
-                                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z">
-                            </path>
-                        </svg>
-                    </a>
-
-
-                    <a href="https://www.youtube.com/@aantarya2k24" target="_blank"
-                        class="socialContainer containerTwo">
-                        <svg class="socialSvg twitterSvg" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100"
-                            height="100" viewBox="0,0,256,256">
-                            <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
-                                stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
-                                font-family="none" font-weight="none" font-size="none" text-anchor="none"
-                                style="mix-blend-mode: normal">
-                                <g transform="scale(5.12,5.12)">
-                                    <path
-                                        d="M44.89844,14.5c-0.39844,-2.19922 -2.29687,-3.80078 -4.5,-4.30078c-3.29687,-0.69922 -9.39844,-1.19922 -16,-1.19922c-6.59766,0 -12.79687,0.5 -16.09766,1.19922c-2.19922,0.5 -4.10156,2 -4.5,4.30078c-0.40234,2.5 -0.80078,6 -0.80078,10.5c0,4.5 0.39844,8 0.89844,10.5c0.40234,2.19922 2.30078,3.80078 4.5,4.30078c3.5,0.69922 9.5,1.19922 16.10156,1.19922c6.60156,0 12.60156,-0.5 16.10156,-1.19922c2.19922,-0.5 4.09766,-2 4.5,-4.30078c0.39844,-2.5 0.89844,-6.10156 1,-10.5c-0.20312,-4.5 -0.70312,-8 -1.20312,-10.5zM19,32v-14l12.19922,7z">
-                                    </path>
-                                </g>
-                            </g>
-                        </svg> </a>
-                </div>
+                <p class="text_two">
+                    Thank you for participating in our event. We look forward to seeing
+                    you at the Aantarya IT Fest. Please log in to your account and
+                    register participants for the events.
+                </p>
             </div>
 
             <div class="best_regards">
                 <p class="text_three">Best Regards</p>
-                <p class="text_three pos">Aantarya Tech Team</p>
+                <p class="text_three pos">Team Aantarya 2k24</p>
             </div>
         </div>
         <div class="back_three"></div>
         <div class="footer_text">
             <div class="line"></div>
-            <p class="sub_text">This is an auto-generated email as you registered for Aantarya 2k24. If you have any
-                questions or issues about the event, please don't hesitate to contact us at our <a
-                    href="https://aantarya.tech/">official website</a>.
+            <p class="sub_text">
+                This is an auto-generated email as you registered for Aantarya 2k24.
+                If you have any questions or issues about the event, please don't
+                hesitate to contact us at our
+                <a href="https://aantarya.tech/">official website</a>.
             </p>
             <div class="copyright_text">
-                <p class="copyright_text_one">©Aantarya-2k24. All rights reserved.</p>
-                <a href="https://vcetputtur.ac.in/" class="copyright_text_one copyright_text_two">Vivekananda College of Engineering & Technology (VCET), Puttur</a>
+                <p class="copyright_text_one">Copyright &copy; Aantarya-2k24. All rights reserved.</p>
+                <a href="https://vcetputtur.ac.in/" class="copyright_text_one copyright_text_two">Vivekananda College of
+                    Engineering & Technology (VCET), Puttur</a>
             </div>
         </div>
     </div>
-
-
 </body>
 
 </html>
