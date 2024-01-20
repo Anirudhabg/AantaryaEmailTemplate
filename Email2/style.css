@@ -1,0 +1,352 @@
+body {
+    font-family: "Miso", monospace;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #e7e6e6;
+  }
+  
+  .container {
+    max-width: 37.5rem;
+    height: 110.688rem;
+    margin: 1.25rem auto;
+    background-color: #0a579b;
+    color: #fff;
+    border-radius: 0.313rem;
+    box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo {
+    position: relative;
+    bottom: 11rem;
+    overflow: hidden;
+    width: 37.5rem;
+  }
+  .back_one {
+    width: 37.5rem;
+    height: 10rem;
+    flex-shrink: 0;
+    opacity: 0.5;
+    transform: rotate(180deg);
+    background: url(Images/new-mandala.png);
+    background-position: 0px -1.927px;
+    background-size: 100% 210.938%;
+    background-repeat: no-repeat;
+    mix-blend-mode: plus-lighter;
+  }
+  
+  .greeting_text {
+    width: 31.25rem;
+    padding: 0 3.125rem;
+    position: relative;
+    bottom: 11rem;
+  }
+  .main_text {
+    color: #fed201;
+    text-align: center;
+    font-family: Miso;
+    font-size: 4.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .text_one {
+    color: #fff;
+    text-align: center;
+    font-family: Miso;
+    font-size: 2.625rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: relative;
+    bottom: 2rem;
+  }
+  .text_two {
+    color: #fff;
+    text-align: center;
+    font-family: Miso;
+    font-size: 1.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%; /* 35px */
+    position: relative;
+    bottom: 4rem;
+  }
+  .back_two {
+    width: 37.5rem;
+    height: 21.875rem;
+    flex-shrink: 0;
+    opacity: 0.5;
+    transform: rotate(180deg);
+    background: url(Images/new-mandala.png);
+    background-position: -0.007px -1.927px;
+    background-size: 100% 96.429%;
+    background-repeat: no-repeat;
+    mix-blend-mode: plus-lighter;
+    position: relative;
+    bottom: 30rem;
+  }
+  
+  .team_details_text {
+    width: 31.25rem;
+    height: 30.25rem;
+    flex-shrink: 0;
+    padding: 0 3.125rem;
+    position: relative;
+    bottom: 40rem;
+  }
+  .team_details {
+    width: 31.25rem;
+    height: 25rem;
+  }
+  .team_details .text_two {
+    position: relative;
+    top: -2rem;
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  .follow_us {
+    width: 31.25rem;
+    position: relative;
+  }
+  .card-social {
+    width: fit-content;
+    height: fit-content;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2vh 4vw;
+    margin: 0 auto;
+    gap: 20px;
+  }
+  
+  /* for all social containers*/
+  .socialContainer {
+    width: 3.5rem;
+    height: 3.5rem;
+    background-color: rgb(44, 44, 44);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition-duration: 0.3s;
+  }
+  
+  /* instagram*/
+  .containerOne:hover {
+    background-color: #9b30df;
+    transition-duration: 0.3s;
+  }
+  
+  /* twitter*/
+  .containerTwo:hover {
+    background-color: #ff2020;
+    transition-duration: 0.3s;
+  }
+  
+  .socialContainer:active {
+    transform: scale(0.9);
+    transition-duration: 0.3s;
+  }
+  
+  .socialSvg {
+    width: 17px;
+  }
+  
+  .socialSvg path {
+    fill: rgb(255, 255, 255);
+  }
+  
+  .socialContainer:hover .socialSvg {
+    animation: slide-in-top 0.3s both;
+  }
+  
+  @keyframes slide-in-top {
+    0% {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  .follow_us_text {
+    color: #fed201;
+    text-align: center;
+    font-family: Miso;
+    font-size: 1.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%; /* 35px */
+    margin: 0 auto;
+  }
+  .text_three {
+    color: #fed201;
+    text-align: center;
+    font-family: Miso;
+    font-size: 1.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%; /* 35px */
+    position: relative;
+    bottom: 1rem;
+  }
+  .pos {
+    position: relative;
+    bottom: 2rem;
+  }
+  
+  .footer_text {
+    width: 31.25rem;
+    height: 7.438rem;
+    padding: 0 3.125rem;
+    position: relative;
+    bottom: 52rem;
+  }
+  
+  .line {
+    width: 31.25rem;
+    height: 0.063rem;
+    background-color: #fff;
+  }
+  
+  .sub_text {
+    color: #fff;
+    text-align: center;
+    font-family: Miso;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%; /* 25px */
+  }
+  
+  .back_three {
+    width: 37.5rem;
+    height: 20.938rem;
+    background-image: url(Images/mandala.png);
+    background-position: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    bottom: 37rem;
+  }
+  .copyright_text_one {
+    color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    font-family: Miso;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%; /* 25px */
+  }
+  
+  a {
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .copyright_text_two{
+    position: relative;
+    bottom: 1rem;
+    /* margin: 0 auto; */
+    /* left: 1.5rem; */
+    padding: 0 40px;
+    text-decoration: none;
+  }
+  @media (max-width: 767px) {
+    .container {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      height: 1140px;
+    }
+    .back_one,
+    .back_two,
+    .back_three {
+      width: 100%;
+    }
+    .back_one {
+      height: 7%;
+    }
+    .logo {
+      width: 100%;
+      position: relative;
+      top: -9rem;
+    }
+    .greeting_text {
+      width: 100%;
+      padding: 0;
+    }
+    .main_text {
+      font-size: 3.75rem;
+    }
+    .text_one {
+      font-size: 2.188rem;
+    }
+    .text_two {
+      font-size: 1.35rem;
+    }
+    .back_two {
+      height: 17%;
+      /* transform: rotate(90deg); */
+    }
+    .team_details_text {
+      /* position: relative; */
+      padding: 0;
+      width: 100%;
+      bottom: 29rem;
+    }
+    .team_details {
+      width: 100%;
+    }
+    .card-social{
+      position: relative;
+      bottom: 7.5rem;
+    }
+    .follow_us_text{
+      position: relative;
+      bottom: 7rem;
+    }
+    .follow_us_text,.text_three{
+      font-size: 1.35rem;
+    }
+    .best_regards {
+      position: relative;
+      bottom: 8rem;
+    }
+    .footer_text{
+      width: 100%;
+      padding: 0;
+      top: -44rem;
+    }
+    .line{
+      width: 300px;
+      margin: 0 auto;
+    }
+    .sub_text,.copyright_text_one{
+      font-size: 15px;
+      text-decoration: none;
+      text-align: center;
+    }
+    .back_three{
+      height: 18%;
+    }
+    li.text_one{
+      font-size: 1.75rem;
+    }
+    .copyright_text_two{
+      text-align: center;
+      position: relative;
+      bottom: 1rem;
+      left: 1.4rem;
+      padding: 0;
+    }
+  }
+  
